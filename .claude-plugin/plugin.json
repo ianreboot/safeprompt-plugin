@@ -1,0 +1,29 @@
+{
+  "name": "safeprompt",
+  "displayName": "SafePrompt",
+  "version": "0.1.0",
+  "description": "Check untrusted text (web pages, files, emails, tool outputs) for prompt injection before Claude acts on it.",
+  "author": {
+    "name": "Reboot, Inc.",
+    "email": "arsh.s@rebootmedia.net",
+    "url": "https://safeprompt.dev"
+  },
+  "homepage": "https://docs.safeprompt.dev/mcp",
+  "repository": "https://github.com/ianreboot/safeprompt-plugin",
+  "license": "MIT",
+  "keywords": ["security", "prompt-injection", "mcp", "agents"],
+  "icon": "./logo.png",
+  "documentationUrl": "https://docs.safeprompt.dev/mcp",
+  "supportUrl": "https://safeprompt.dev/contact",
+  "privacyPolicyUrl": "https://safeprompt.dev/privacy",
+  "termsOfServiceUrl": "https://safeprompt.dev/terms",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "SafePrompt API key",
+      "description": "Get a free key at https://dashboard.safeprompt.dev (10,000 checks a month).",
+      "required": true,
+      "sensitive": true
+    }
+  }
+}
